@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-14",
+  "date": "2026-09-21",
   "competitions": {
     "Régionale 3": {
       "journees": 18,
@@ -8,50 +8,50 @@
       "classementBrut": [
         {
           "club": "AS Penne St Sylvestre",
-          "position": 0,
+          "position": 1,
           "stats": {
-            "id": 86595811,
+            "id": 88816712,
             "regulationPointsTerrain": null,
-            "pointTerrain": 0,
-            "joues": 0,
-            "gagnes": 0,
+            "pointTerrain": 5,
+            "joues": 1,
+            "gagnes": 1,
             "nuls": 0,
             "perdus": 0,
-            "pointsDeMarqueAcquis": 0,
-            "pointsDeMarqueConcedes": 0,
-            "goalAverage": 0,
+            "pointsDeMarqueAcquis": 41,
+            "pointsDeMarqueConcedes": 6,
+            "goalAverage": 35,
             "essaiMarques": null,
             "essaiConcedes": null,
-            "bonusOffensif": 0,
+            "bonusOffensif": 1,
             "bonusDefensif": 0,
-            "createdAt": "2026-09-14T10:01:14.704Z",
-            "updatedAt": "2026-09-14T10:01:14.687Z"
+            "createdAt": "2026-09-21T01:55:48.297Z",
+            "updatedAt": "2026-09-21T01:55:48.286Z"
           }
         },
         {
-          "club": "Amicale Sportive Eymetoise",
-          "position": 0,
+          "club": "SC Saint Aubin",
+          "position": 1,
           "stats": {
-            "id": 86595826,
+            "id": 88816713,
             "regulationPointsTerrain": null,
-            "pointTerrain": 0,
-            "joues": 0,
-            "gagnes": 0,
+            "pointTerrain": 5,
+            "joues": 1,
+            "gagnes": 1,
             "nuls": 0,
             "perdus": 0,
-            "pointsDeMarqueAcquis": 0,
+            "pointsDeMarqueAcquis": 59,
             "pointsDeMarqueConcedes": 0,
-            "goalAverage": 0,
+            "goalAverage": 59,
             "essaiMarques": null,
             "essaiConcedes": null,
-            "bonusOffensif": 0,
+            "bonusOffensif": 1,
             "bonusDefensif": 0,
-            "createdAt": "2026-09-14T10:01:14.714Z",
-            "updatedAt": "2026-09-14T10:01:14.698Z"
+            "createdAt": "2026-09-21T01:55:48.300Z",
+            "updatedAt": "2026-09-21T01:55:48.290Z"
           }
         }
       ],
-      "detailClassement": false
+      "detailClassement": true
     },
     "Fédérale 1 Féminine": {
       "journees": 14,
@@ -62,7 +62,7 @@
           "club": "Entente Sp Bruges Blanquefort",
           "position": 1,
           "stats": {
-            "id": 86557073,
+            "id": 88816333,
             "regulationPointsTerrain": null,
             "pointTerrain": 10,
             "joues": 2,
@@ -76,15 +76,15 @@
             "essaiConcedes": null,
             "bonusOffensif": 2,
             "bonusDefensif": 0,
-            "createdAt": "2026-09-14T01:53:33.491Z",
-            "updatedAt": "2026-09-14T01:53:33.473Z"
+            "createdAt": "2026-09-21T01:55:46.112Z",
+            "updatedAt": "2026-09-21T01:55:46.099Z"
           }
         },
         {
           "club": "Ras Jsv-aa Avenir Aturin Fed 1 Feminine",
           "position": 1,
           "stats": {
-            "id": 86557074,
+            "id": 88816338,
             "regulationPointsTerrain": null,
             "pointTerrain": 10,
             "joues": 2,
@@ -98,8 +98,8 @@
             "essaiConcedes": null,
             "bonusOffensif": 2,
             "bonusDefensif": 0,
-            "createdAt": "2026-09-14T01:53:33.498Z",
-            "updatedAt": "2026-09-14T01:53:33.481Z"
+            "createdAt": "2026-09-21T01:55:46.118Z",
+            "updatedAt": "2026-09-21T01:55:46.103Z"
           }
         }
       ],
