@@ -2,40 +2,48 @@ name: Mise à jour du calendrier
 
 on:
   schedule:
-    # Tous les lundis à 06:00 UTC (08:00 à Paris l'été, 07:00 l'hiver)
-    - cron: "0 6 * * 1"
-  workflow_dispatch: # permet aussi de lancer la mise à jour à la main
+    - cron: "0 6 * * 1" # tous les lundis à 6h UTC, soit 8h à Paris
+  workflow_dispatch:
 
 permissions:
   contents: write
 
-concurrency:
-  group: mise-a-jour
-  cancel-in-progress: false
-
 jobs:
-  mettre-a-jour:
+  mise-a-jour:
     runs-on: ubuntu-latest
     steps:
-      - name: Récupérer le site
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Installer Node
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: "20"
 
-      - name: Lire monclubhouse et mettre à jour index.html
+      - name: Essais hors ligne
+        run: node test-maj.mjs
+
+      - name: Lecture de monclubhouse
         run: node maj.mjs .
 
-      - name: Publier les changements
+      - name: Publication
         run: |
-          if [ -z "$(git status --porcelain)" ]; then
-            echo "Aucun changement, rien à publier."
-            exit 0
-          fi
-          git config user.name "Mise à jour automatique"
+          git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A
+          git add index.html diagnostic.json
+          git diff --staged --quiet && echo "Rien à publier." && exit 0
           git commit -m "Résultats et classement du week-end"
           git push
+
+      # Vient après la publication : les données sont déjà en ligne, cette étape
+      # ne sert qu'à faire sonner GitHub (mail d'échec) si quelque chose cloche.
+      - name: Contrôle
+        run: |
+          node -e "
+          const d = require('./diagnostic.json');
+          const a = d.alertes || [];
+          if (!a.length) { console.log('Contrôle : rien à signaler.'); process.exit(0); }
+          console.error('À signaler :');
+          for (const x of a) console.error(' - ' + x);
+          console.error('');
+          console.error('Les données lisibles ont été publiées ; voir diagnostic.json.');
+          process.exit(1);
+          "
