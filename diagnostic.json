@@ -1,16 +1,19 @@
 {
-  "date": "2026-10-05",
+  "date": "2026-10-06",
   "competitions": {
     "Régionale 3": {
       "journees": 18,
       "rencontres": 90,
+      "joues": 15,
+      "scoresIgnores": [],
+      "sansCorrespondance": [],
       "classement": 10,
       "classementBrut": [
         {
           "club": "AS Penne St Sylvestre",
           "position": 1,
           "stats": {
-            "id": 95497235,
+            "id": 95660704,
             "regulationPointsTerrain": null,
             "pointTerrain": 14,
             "joues": 3,
@@ -24,15 +27,15 @@
             "essaiConcedes": null,
             "bonusOffensif": 2,
             "bonusDefensif": 0,
-            "createdAt": "2026-10-05T11:40:30.280Z",
-            "updatedAt": "2026-10-05T11:40:30.264Z"
+            "createdAt": "2026-10-05T17:10:43.998Z",
+            "updatedAt": "2026-10-05T17:10:43.980Z"
           }
         },
         {
           "club": "Amicale Sportive Eymetoise",
           "position": 1,
           "stats": {
-            "id": 95497237,
+            "id": 95660717,
             "regulationPointsTerrain": null,
             "pointTerrain": 14,
             "joues": 3,
@@ -46,8 +49,8 @@
             "essaiConcedes": null,
             "bonusOffensif": 2,
             "bonusDefensif": 0,
-            "createdAt": "2026-10-05T11:40:30.286Z",
-            "updatedAt": "2026-10-05T11:40:30.272Z"
+            "createdAt": "2026-10-05T17:10:44.010Z",
+            "updatedAt": "2026-10-05T17:10:43.989Z"
           }
         }
       ],
@@ -56,13 +59,16 @@
     "Fédérale 1 Féminine": {
       "journees": 14,
       "rencontres": 56,
+      "joues": 14,
+      "scoresIgnores": [],
+      "sansCorrespondance": [],
       "classement": 8,
       "classementBrut": [
         {
           "club": "Entente Sp Bruges Blanquefort",
           "position": 1,
           "stats": {
-            "id": 95413108,
+            "id": 95891528,
             "regulationPointsTerrain": null,
             "pointTerrain": 10,
             "joues": 2,
@@ -76,15 +82,15 @@
             "essaiConcedes": null,
             "bonusOffensif": 2,
             "bonusDefensif": 0,
-            "createdAt": "2026-10-05T02:05:17.078Z",
-            "updatedAt": "2026-10-05T02:05:17.064Z"
+            "createdAt": "2026-10-06T02:07:30.782Z",
+            "updatedAt": "2026-10-06T02:07:30.773Z"
           }
         },
         {
           "club": "Ras Jsv-aa Avenir Aturin Fed 1 Feminine",
           "position": 1,
           "stats": {
-            "id": 95413111,
+            "id": 95891530,
             "regulationPointsTerrain": null,
             "pointTerrain": 10,
             "joues": 2,
@@ -98,12 +104,14 @@
             "essaiConcedes": null,
             "bonusOffensif": 2,
             "bonusDefensif": 0,
-            "createdAt": "2026-10-05T02:05:17.083Z",
-            "updatedAt": "2026-10-05T02:05:17.075Z"
+            "createdAt": "2026-10-06T02:07:30.785Z",
+            "updatedAt": "2026-10-06T02:07:30.776Z"
           }
         }
       ],
       "detailClassement": true
     }
-  }
+  },
+  "alertes": [],
+  "renommages": 3
 }
