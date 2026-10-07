@@ -52,6 +52,36 @@ const COMPETITIONS = [
 // ces journees sont des exemptions, pas des rencontres.
 const EXEMPT = /^club exempt/i;
 
+// Stades manquants, a completer au fil de l'eau : une entree est ajoutee a
+// index.html au prochain passage, et ignoree si l'adresse est vide ou si le
+// club en a deja une. La FFR ne publie pas les terrains (les fiches match
+// sont interdites par son robots.txt), d'ou cette saisie a la main.
+const STADES_AJOUTS = [
+  { club: "RC Cestadais", stade: "" },
+  { club: "Ras Brejac Rugby La Brede Fed2 Feminines A XV", stade: "" },
+  { club: "Rugby Club de La Pimpine", stade: "" },
+  { club: "Ras Floirac Rive Droite Pays Du Libournais Libourne Fed2 Feminines A XV", stade: "" },
+  { club: "Union Du Bassin Marmandais", stade: "" },
+  { club: "Aytre Rugby", stade: "" },
+];
+
+/* Insere les stades manquants dans l'objet STADES de index.html. */
+export function ajouterStades(html, ajouts) {
+  const ancre = html.indexOf("const STADES = {");
+  if (ancre < 0) return { html, ajoutes: [] };
+  const ouvre = html.indexOf("{", ancre) + 1;
+  const ajoutes = [];
+  let bloc = "";
+  for (const a of ajouts) {
+    if (!a || !a.club || !a.stade) continue;
+    if (html.includes(JSON.stringify(a.club) + ":")) continue; // deja connu
+    bloc += `\n  ${JSON.stringify(a.club)}: ${JSON.stringify(a.stade)},`;
+    ajoutes.push(a.club);
+  }
+  if (!bloc) return { html, ajoutes: [] };
+  return { html: html.slice(0, ouvre) + bloc + html.slice(ouvre), ajoutes };
+}
+
 // Clubs renommes par la FFR en cours de saison (ententes, fusions).
 // Le renommage est applique une fois, partout dans index.html : calendrier,
 // stades et logos suivent. Une fois le fichier a jour, la ligne ne fait plus
@@ -348,6 +378,11 @@ async function principal() {
     }
   }
 
+  /* ---------- 0 bis. stades ajoutes a la main ---------- */
+  const stades = ajouterStades(html, STADES_AJOUTS);
+  html = stades.html;
+  if (stades.ajoutes.length) log(`Stades ajoutés : ${stades.ajoutes.join(", ")}`);
+
   const { debut, fin, bloc } = lireBloc(html);
   const constantes = (html.match(/^const (?:CLUB|R3|F1F|F2F|STADE_DEF)\s*=.*$/gm) || [])
     .join("\n").replace(/^const /gm, "var ");
@@ -532,6 +567,7 @@ async function principal() {
   }
   diagnostic.alertes = alertes;
   diagnostic.renommages = renommes;
+  diagnostic.stadesAjoutes = stades.ajoutes;
   if (alertes.length) {
     log("\nÀ signaler :");
     for (const x of alertes) log("  - " + x);
@@ -539,7 +575,7 @@ async function principal() {
 
   fs.writeFileSync(DIAG, JSON.stringify(diagnostic, null, 2));
 
-  if (!scores && !dates && !classements && !poules && !renommes) {
+  if (!scores && !dates && !classements && !poules && !renommes && !stades.ajoutes.length) {
     log("\nRien de neuf, fichier inchangé.");
     return;
   }
