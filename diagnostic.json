@@ -115,10 +115,9 @@
       "journees": 14,
       "rencontres": 42,
       "joues": 0,
-      "semes": 12,
       "scoresIgnores": [],
       "sansCorrespondance": [],
-      "classement": 8,
+      "classement": 7,
       "classementBrut": [
         {
           "club": "Club Exempt 1",
@@ -170,5 +169,13 @@
   },
   "alertes": [],
   "renommages": 0,
-  "stadesAjoutes": []
+  "stadesAjoutes": [],
+  "logosAjoutes": [
+    "Rugby Club de La Pimpine",
+    "Aytre Rugby",
+    "RC Cestadais",
+    "Ras Brejac Rugby La Brede Fed2 Feminines A XV",
+    "Ras Floirac Rive Droite Pays Du Libournais Libourne Fed2 Feminines A XV",
+    "Union Du Bassin Marmandais"
+  ]
 }
