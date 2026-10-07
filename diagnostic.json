@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-06",
+  "date": "2026-10-07",
   "competitions": {
     "Régionale 3": {
       "journees": 18,
@@ -13,7 +13,7 @@
           "club": "AS Penne St Sylvestre",
           "position": 1,
           "stats": {
-            "id": 95660704,
+            "id": 96253601,
             "regulationPointsTerrain": null,
             "pointTerrain": 14,
             "joues": 3,
@@ -27,15 +27,15 @@
             "essaiConcedes": null,
             "bonusOffensif": 2,
             "bonusDefensif": 0,
-            "createdAt": "2026-10-05T17:10:43.998Z",
-            "updatedAt": "2026-10-05T17:10:43.980Z"
+            "createdAt": "2026-10-07T09:21:52.572Z",
+            "updatedAt": "2026-10-07T09:21:52.489Z"
           }
         },
         {
           "club": "Amicale Sportive Eymetoise",
           "position": 1,
           "stats": {
-            "id": 95660717,
+            "id": 96253600,
             "regulationPointsTerrain": null,
             "pointTerrain": 14,
             "joues": 3,
@@ -49,8 +49,8 @@
             "essaiConcedes": null,
             "bonusOffensif": 2,
             "bonusDefensif": 0,
-            "createdAt": "2026-10-05T17:10:44.010Z",
-            "updatedAt": "2026-10-05T17:10:43.989Z"
+            "createdAt": "2026-10-07T09:21:52.571Z",
+            "updatedAt": "2026-10-07T09:21:52.488Z"
           }
         }
       ],
@@ -68,7 +68,7 @@
           "club": "Entente Sp Bruges Blanquefort",
           "position": 1,
           "stats": {
-            "id": 95891528,
+            "id": 96234531,
             "regulationPointsTerrain": null,
             "pointTerrain": 10,
             "joues": 2,
@@ -82,15 +82,15 @@
             "essaiConcedes": null,
             "bonusOffensif": 2,
             "bonusDefensif": 0,
-            "createdAt": "2026-10-06T02:07:30.782Z",
-            "updatedAt": "2026-10-06T02:07:30.773Z"
+            "createdAt": "2026-10-07T03:04:04.855Z",
+            "updatedAt": "2026-10-07T03:04:04.777Z"
           }
         },
         {
           "club": "Ras Jsv-aa Avenir Aturin Fed 1 Feminine",
           "position": 1,
           "stats": {
-            "id": 95891530,
+            "id": 96234534,
             "regulationPointsTerrain": null,
             "pointTerrain": 10,
             "joues": 2,
@@ -104,14 +104,71 @@
             "essaiConcedes": null,
             "bonusOffensif": 2,
             "bonusDefensif": 0,
-            "createdAt": "2026-10-06T02:07:30.785Z",
-            "updatedAt": "2026-10-06T02:07:30.776Z"
+            "createdAt": "2026-10-07T03:04:04.882Z",
+            "updatedAt": "2026-10-07T03:04:04.830Z"
           }
         }
       ],
       "detailClassement": true
+    },
+    "Fédérale 2 Féminine": {
+      "journees": 14,
+      "rencontres": 42,
+      "joues": 0,
+      "semes": 12,
+      "scoresIgnores": [],
+      "sansCorrespondance": [],
+      "classement": 8,
+      "classementBrut": [
+        {
+          "club": "Club Exempt 1",
+          "position": 0,
+          "stats": {
+            "id": 96402848,
+            "regulationPointsTerrain": null,
+            "pointTerrain": 0,
+            "joues": 0,
+            "gagnes": 0,
+            "nuls": 0,
+            "perdus": 0,
+            "pointsDeMarqueAcquis": 0,
+            "pointsDeMarqueConcedes": 0,
+            "goalAverage": 0,
+            "essaiMarques": null,
+            "essaiConcedes": null,
+            "bonusOffensif": 0,
+            "bonusDefensif": 0,
+            "createdAt": "2026-10-07T15:01:53.352Z",
+            "updatedAt": "2026-10-07T15:01:53.342Z"
+          }
+        },
+        {
+          "club": "Ras Floirac Rive Droite Pays Du Libournais Libourne Fed2 Feminines A XV",
+          "position": 0,
+          "stats": {
+            "id": 96402853,
+            "regulationPointsTerrain": null,
+            "pointTerrain": 0,
+            "joues": 0,
+            "gagnes": 0,
+            "nuls": 0,
+            "perdus": 0,
+            "pointsDeMarqueAcquis": 0,
+            "pointsDeMarqueConcedes": 0,
+            "goalAverage": 0,
+            "essaiMarques": null,
+            "essaiConcedes": null,
+            "bonusOffensif": 0,
+            "bonusDefensif": 0,
+            "createdAt": "2026-10-07T15:01:53.356Z",
+            "updatedAt": "2026-10-07T15:01:53.346Z"
+          }
+        }
+      ],
+      "detailClassement": false
     }
   },
   "alertes": [],
-  "renommages": 3
+  "renommages": 0,
+  "stadesAjoutes": []
 }
