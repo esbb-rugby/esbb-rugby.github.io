@@ -37,7 +37,20 @@ const COMPETITIONS = [
     poule: "https://monclubhouse.ffr.fr/nationales/federale-1-feminine/qualification-50138/73056",
     attendu: { journees: 14, classement: 8 },
   },
+  {
+    // Entree en cours de saison : le calendrier de l'ESBB est absent du
+    // fichier, « semer » autorise le programme a le creer une premiere fois
+    // a partir de la poule. Ensuite il se comporte comme les autres.
+    nom: "Fédérale 2 Féminine",
+    poule: "https://monclubhouse.ffr.fr/regionales/nouvelle-aquitaine/nouvelle-aquitaine-federale-2-feminine-nouvelle-aquitaine/qualification-niveau-b-50334/73448",
+    attendu: { journees: 14, classement: 8 },
+    semer: true,
+  },
 ];
+
+// Une poule a nombre impair d'equipes fait tourner un adversaire fictif :
+// ces journees sont des exemptions, pas des rencontres.
+const EXEMPT = /^club exempt/i;
 
 // Clubs renommes par la FFR en cours de saison (ententes, fusions).
 // Le renommage est applique une fois, partout dans index.html : calendrier,
@@ -370,8 +383,10 @@ async function principal() {
       const flux = await chargerFlux(comp.poule + "/calendrier-resultats");
       journees = extraireJournees(flux).map((x) => ({
         j: x.j,
-        matchs: x.matchs.map((m) => [m[0], nomFichier(m[1]), nomFichier(m[2]), m[3], m[4]]),
-      }));
+        matchs: x.matchs
+          .filter((m) => !EXEMPT.test(m[1]) && !EXEMPT.test(m[2]))
+          .map((m) => [m[0], nomFichier(m[1]), nomFichier(m[2]), m[3], m[4]]),
+      })).filter((x) => x.matchs.length);
       info.journees = journees.length;
       info.rencontres = journees.reduce((a, x) => a + x.matchs.length, 0);
       info.joues = journees.reduce(
@@ -388,8 +403,34 @@ async function principal() {
       jn[comp.nom] = { maj: aujourdhui, journees };
       if (JSON.stringify(journees) !== avant) poules++;
 
-      /* les scores de l'ESBB se lisent dans les memes donnees */
       const moi = sansAccent(CLUB_FFR);
+
+      /* ---------- competition entrante : on seme le calendrier ---------- */
+      if (comp.semer && !matchs.some((m) => m.c === comp.nom)) {
+        const nouveaux = [];
+        for (const x of journees) {
+          for (const [iso, dom, ext] of x.matchs) {
+            const estDom = sansAccent(dom) === moi;
+            if (!estDom && sansAccent(ext) !== moi) continue;
+            nouveaux.push({
+              c: comp.nom, j: x.j,
+              date: iso.slice(0, 10), time: iso.slice(11, 16) || "15:00",
+              lieu: estDom ? "dom" : "ext", adv: estDom ? ext : dom,
+            });
+          }
+        }
+        if (nouveaux.length >= 5) {
+          matchs.push(...nouveaux);
+          matchs.sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : 0));
+          info.semes = nouveaux.length;
+          log(`  calendrier créé : ${nouveaux.length} rencontres`);
+          poules++;
+        } else {
+          info.semisRefuse = `${nouveaux.length} rencontre(s) seulement, trop peu pour créer le calendrier`;
+        }
+      }
+
+      /* les scores de l'ESBB se lisent dans les memes donnees */
       const vus = new Set();
       info.scoresIgnores = [];
       for (const x of journees) {
