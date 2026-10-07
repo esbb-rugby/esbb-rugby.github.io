@@ -4,7 +4,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
-import { lireScore, renommer, extraireJournees, extraireClassement, sansAccent, ajouterStades, lireBloc, evaluerBloc } from "./maj.mjs";
+import { lireScore, renommer, extraireJournees, extraireClassement, sansAccent, ajouterStades, ajouterLogos, lireBloc, evaluerBloc } from "./maj.mjs";
 
 let echecs = 0;
 const verifie = (nom, obtenu, attendu) => {
@@ -91,6 +91,17 @@ verifie("accents ignorés pour comparer les noms",
   verifie("l'objet reste lisible",
     new Function("return (" + r1.html.slice(r1.html.indexOf("{"), r1.html.lastIndexOf("}") + 1) + ")")()["RC Cestadais"],
     "Stade de Cestas");
+}
+
+/* --- ajout d'un logo ----------------------------------------------------- */
+{
+  const html = `const LOGOS = {"SC Saint Aubin": "data:image/webp;base64,AAA"};\n`;
+  const r = ajouterLogos(html, [{ club: "RC Cestadais", logo: "data:image/webp;base64,BBB" }]);
+  verifie("logo ajouté", /"RC Cestadais": "data:image\/webp;base64,BBB"/.test(r.html), true);
+  verifie("logo : l'objet reste lisible",
+    Object.keys(new Function("return (" + r.html.slice(r.html.indexOf("{"), r.html.lastIndexOf("}") + 1) + ")")()).length, 2);
+  verifie("logo déjà présent : rien n'est touché",
+    ajouterLogos(r.html, [{ club: "SC Saint Aubin", logo: "data:image/webp;base64,CCC" }]).html, r.html);
 }
 
 /* --- répétition générale : une compétition qui arrive en cours de saison -- */
