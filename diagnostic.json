@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-07",
+  "date": "2026-10-12",
   "competitions": {
     "Régionale 3": {
       "journees": 18,
@@ -13,7 +13,7 @@
           "club": "AS Penne St Sylvestre",
           "position": 1,
           "stats": {
-            "id": 96253601,
+            "id": 98419675,
             "regulationPointsTerrain": null,
             "pointTerrain": 14,
             "joues": 3,
@@ -27,15 +27,15 @@
             "essaiConcedes": null,
             "bonusOffensif": 2,
             "bonusDefensif": 0,
-            "createdAt": "2026-10-07T09:21:52.572Z",
-            "updatedAt": "2026-10-07T09:21:52.489Z"
+            "createdAt": "2026-10-12T02:05:51.573Z",
+            "updatedAt": "2026-10-12T02:05:51.555Z"
           }
         },
         {
           "club": "Amicale Sportive Eymetoise",
           "position": 1,
           "stats": {
-            "id": 96253600,
+            "id": 98419677,
             "regulationPointsTerrain": null,
             "pointTerrain": 14,
             "joues": 3,
@@ -49,8 +49,8 @@
             "essaiConcedes": null,
             "bonusOffensif": 2,
             "bonusDefensif": 0,
-            "createdAt": "2026-10-07T09:21:52.571Z",
-            "updatedAt": "2026-10-07T09:21:52.488Z"
+            "createdAt": "2026-10-12T02:05:51.578Z",
+            "updatedAt": "2026-10-12T02:05:51.565Z"
           }
         }
       ],
@@ -59,53 +59,55 @@
     "Fédérale 1 Féminine": {
       "journees": 14,
       "rencontres": 56,
-      "joues": 14,
-      "scoresIgnores": [],
+      "joues": 17,
+      "scoresIgnores": [
+        "J1 Ras Stado Tpr-ibos : publié 0-0 par la FFR, non recopié"
+      ],
       "sansCorrespondance": [],
       "classement": 8,
       "classementBrut": [
         {
-          "club": "Entente Sp Bruges Blanquefort",
+          "club": "Lons Section Paloise Rugby Feminin",
           "position": 1,
           "stats": {
-            "id": 96234531,
+            "id": 98419286,
             "regulationPointsTerrain": null,
-            "pointTerrain": 10,
-            "joues": 2,
-            "gagnes": 2,
+            "pointTerrain": 15,
+            "joues": 3,
+            "gagnes": 3,
             "nuls": 0,
             "perdus": 0,
-            "pointsDeMarqueAcquis": 50,
-            "pointsDeMarqueConcedes": 0,
-            "goalAverage": 50,
+            "pointsDeMarqueAcquis": 114,
+            "pointsDeMarqueConcedes": 7,
+            "goalAverage": 107,
             "essaiMarques": null,
             "essaiConcedes": null,
-            "bonusOffensif": 2,
+            "bonusOffensif": 3,
             "bonusDefensif": 0,
-            "createdAt": "2026-10-07T03:04:04.855Z",
-            "updatedAt": "2026-10-07T03:04:04.777Z"
+            "createdAt": "2026-10-12T02:05:48.344Z",
+            "updatedAt": "2026-10-12T02:05:48.330Z"
           }
         },
         {
-          "club": "Ras Jsv-aa Avenir Aturin Fed 1 Feminine",
-          "position": 1,
+          "club": "Entente Sp Bruges Blanquefort",
+          "position": 2,
           "stats": {
-            "id": 96234534,
+            "id": 98419292,
             "regulationPointsTerrain": null,
-            "pointTerrain": 10,
-            "joues": 2,
-            "gagnes": 2,
+            "pointTerrain": 14,
+            "joues": 3,
+            "gagnes": 3,
             "nuls": 0,
             "perdus": 0,
-            "pointsDeMarqueAcquis": 50,
-            "pointsDeMarqueConcedes": 0,
-            "goalAverage": 50,
+            "pointsDeMarqueAcquis": 69,
+            "pointsDeMarqueConcedes": 18,
+            "goalAverage": 51,
             "essaiMarques": null,
             "essaiConcedes": null,
             "bonusOffensif": 2,
             "bonusDefensif": 0,
-            "createdAt": "2026-10-07T03:04:04.882Z",
-            "updatedAt": "2026-10-07T03:04:04.830Z"
+            "createdAt": "2026-10-12T02:05:48.349Z",
+            "updatedAt": "2026-10-12T02:05:48.334Z"
           }
         }
       ],
@@ -114,68 +116,63 @@
     "Fédérale 2 Féminine": {
       "journees": 14,
       "rencontres": 42,
-      "joues": 0,
+      "joues": 3,
       "scoresIgnores": [],
       "sansCorrespondance": [],
       "classement": 7,
       "classementBrut": [
         {
-          "club": "Club Exempt 1",
-          "position": 0,
+          "club": "Ras Brejac Rugby La Brede Fed2 Feminines A XV",
+          "position": 1,
           "stats": {
-            "id": 96402848,
+            "id": 98423604,
             "regulationPointsTerrain": null,
-            "pointTerrain": 0,
-            "joues": 0,
-            "gagnes": 0,
+            "pointTerrain": 5,
+            "joues": 1,
+            "gagnes": 1,
             "nuls": 0,
             "perdus": 0,
-            "pointsDeMarqueAcquis": 0,
-            "pointsDeMarqueConcedes": 0,
-            "goalAverage": 0,
+            "pointsDeMarqueAcquis": 39,
+            "pointsDeMarqueConcedes": 12,
+            "goalAverage": 27,
             "essaiMarques": null,
             "essaiConcedes": null,
-            "bonusOffensif": 0,
+            "bonusOffensif": 1,
             "bonusDefensif": 0,
-            "createdAt": "2026-10-07T15:01:53.352Z",
-            "updatedAt": "2026-10-07T15:01:53.342Z"
+            "createdAt": "2026-10-12T02:06:28.429Z",
+            "updatedAt": "2026-10-12T02:06:28.417Z"
           }
         },
         {
-          "club": "Ras Floirac Rive Droite Pays Du Libournais Libourne Fed2 Feminines A XV",
-          "position": 0,
+          "club": "Entente Sp Bruges Blanquefort",
+          "position": 1,
           "stats": {
-            "id": 96402853,
+            "id": 98423606,
             "regulationPointsTerrain": null,
-            "pointTerrain": 0,
-            "joues": 0,
-            "gagnes": 0,
+            "pointTerrain": 5,
+            "joues": 1,
+            "gagnes": 1,
             "nuls": 0,
             "perdus": 0,
-            "pointsDeMarqueAcquis": 0,
-            "pointsDeMarqueConcedes": 0,
-            "goalAverage": 0,
+            "pointsDeMarqueAcquis": 80,
+            "pointsDeMarqueConcedes": 7,
+            "goalAverage": 73,
             "essaiMarques": null,
             "essaiConcedes": null,
-            "bonusOffensif": 0,
+            "bonusOffensif": 1,
             "bonusDefensif": 0,
-            "createdAt": "2026-10-07T15:01:53.356Z",
-            "updatedAt": "2026-10-07T15:01:53.346Z"
+            "createdAt": "2026-10-12T02:06:28.431Z",
+            "updatedAt": "2026-10-12T02:06:28.419Z"
           }
         }
       ],
-      "detailClassement": false
+      "detailClassement": true
     }
   },
-  "alertes": [],
+  "alertes": [
+    "Fédérale 1 Féminine : J1 Ras Stado Tpr-ibos : publié 0-0 par la FFR, non recopié"
+  ],
   "renommages": 0,
   "stadesAjoutes": [],
-  "logosAjoutes": [
-    "Rugby Club de La Pimpine",
-    "Aytre Rugby",
-    "RC Cestadais",
-    "Ras Brejac Rugby La Brede Fed2 Feminines A XV",
-    "Ras Floirac Rive Droite Pays Du Libournais Libourne Fed2 Feminines A XV",
-    "Union Du Bassin Marmandais"
-  ]
+  "logosAjoutes": []
 }
