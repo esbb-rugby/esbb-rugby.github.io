@@ -1,10 +1,10 @@
 {
-  "date": "2026-10-19",
+  "date": "2026-10-26",
   "competitions": {
     "Régionale 3": {
       "journees": 18,
       "rencontres": 90,
-      "joues": 20,
+      "joues": 25,
       "scoresIgnores": [],
       "sansCorrespondance": [],
       "classement": 10,
@@ -13,44 +13,44 @@
           "club": "AS Penne St Sylvestre",
           "position": 1,
           "stats": {
-            "id": 100783562,
+            "id": 103039672,
             "regulationPointsTerrain": null,
-            "pointTerrain": 16,
-            "joues": 4,
-            "gagnes": 3,
+            "pointTerrain": 20,
+            "joues": 5,
+            "gagnes": 4,
             "nuls": 1,
             "perdus": 0,
-            "pointsDeMarqueAcquis": 123,
-            "pointsDeMarqueConcedes": 39,
-            "goalAverage": 84,
+            "pointsDeMarqueAcquis": 148,
+            "pointsDeMarqueConcedes": 57,
+            "goalAverage": 91,
             "essaiMarques": null,
             "essaiConcedes": null,
             "bonusOffensif": 2,
             "bonusDefensif": 0,
-            "createdAt": "2026-10-18T20:04:18.544Z",
-            "updatedAt": "2026-10-18T20:04:18.529Z"
+            "createdAt": "2026-10-26T02:13:31.113Z",
+            "updatedAt": "2026-10-26T02:13:31.102Z"
           }
         },
         {
           "club": "La Brede Rugby",
-          "position": 2,
+          "position": 1,
           "stats": {
-            "id": 100783564,
+            "id": 103039675,
             "regulationPointsTerrain": null,
-            "pointTerrain": 15,
-            "joues": 4,
-            "gagnes": 3,
+            "pointTerrain": 20,
+            "joues": 5,
+            "gagnes": 4,
             "nuls": 0,
             "perdus": 1,
-            "pointsDeMarqueAcquis": 165,
-            "pointsDeMarqueConcedes": 57,
-            "goalAverage": 108,
+            "pointsDeMarqueAcquis": 210,
+            "pointsDeMarqueConcedes": 74,
+            "goalAverage": 136,
             "essaiMarques": null,
             "essaiConcedes": null,
-            "bonusOffensif": 2,
+            "bonusOffensif": 3,
             "bonusDefensif": 1,
-            "createdAt": "2026-10-18T20:04:18.550Z",
-            "updatedAt": "2026-10-18T20:04:18.536Z"
+            "createdAt": "2026-10-26T02:13:31.118Z",
+            "updatedAt": "2026-10-26T02:13:31.107Z"
           }
         }
       ],
@@ -70,7 +70,7 @@
           "club": "Entente Sp Bruges Blanquefort",
           "position": 1,
           "stats": {
-            "id": 100688510,
+            "id": 103039283,
             "regulationPointsTerrain": null,
             "pointTerrain": 18,
             "joues": 4,
@@ -84,15 +84,15 @@
             "essaiConcedes": null,
             "bonusOffensif": 2,
             "bonusDefensif": 0,
-            "createdAt": "2026-10-18T16:52:24.412Z",
-            "updatedAt": "2026-10-18T16:52:24.388Z"
+            "createdAt": "2026-10-26T02:13:27.838Z",
+            "updatedAt": "2026-10-26T02:13:27.831Z"
           }
         },
         {
           "club": "Ras Stado Tpr-ibos",
           "position": 2,
           "stats": {
-            "id": 100688513,
+            "id": 103039291,
             "regulationPointsTerrain": null,
             "pointTerrain": 16,
             "joues": 4,
@@ -106,8 +106,8 @@
             "essaiConcedes": null,
             "bonusOffensif": 3,
             "bonusDefensif": 1,
-            "createdAt": "2026-10-18T16:52:24.421Z",
-            "updatedAt": "2026-10-18T16:52:24.402Z"
+            "createdAt": "2026-10-26T02:13:27.842Z",
+            "updatedAt": "2026-10-26T02:13:27.835Z"
           }
         }
       ],
@@ -125,7 +125,7 @@
           "club": "Ras Brejac Rugby La Brede Fed2 Feminines A XV",
           "position": 1,
           "stats": {
-            "id": 100912904,
+            "id": 103043638,
             "regulationPointsTerrain": null,
             "pointTerrain": 10,
             "joues": 2,
@@ -139,15 +139,15 @@
             "essaiConcedes": null,
             "bonusOffensif": 2,
             "bonusDefensif": 0,
-            "createdAt": "2026-10-19T02:16:40.801Z",
-            "updatedAt": "2026-10-19T02:16:40.776Z"
+            "createdAt": "2026-10-26T02:14:12.520Z",
+            "updatedAt": "2026-10-26T02:14:12.511Z"
           }
         },
         {
           "club": "Union Du Bassin Marmandais",
           "position": 2,
           "stats": {
-            "id": 100912914,
+            "id": 103043648,
             "regulationPointsTerrain": null,
             "pointTerrain": 9,
             "joues": 2,
@@ -161,8 +161,8 @@
             "essaiConcedes": null,
             "bonusOffensif": 1,
             "bonusDefensif": 0,
-            "createdAt": "2026-10-19T02:16:40.810Z",
-            "updatedAt": "2026-10-19T02:16:40.784Z"
+            "createdAt": "2026-10-26T02:14:12.527Z",
+            "updatedAt": "2026-10-26T02:14:12.517Z"
           }
         }
       ],
