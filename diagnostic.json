@@ -1,56 +1,56 @@
 {
-  "date": "2026-11-02",
+  "date": "2026-11-09",
   "competitions": {
     "Régionale 3": {
       "journees": 18,
       "rencontres": 90,
-      "joues": 25,
+      "joues": 30,
       "scoresIgnores": [],
       "sansCorrespondance": [],
       "classement": 10,
       "classementBrut": [
         {
-          "club": "AS Penne St Sylvestre",
+          "club": "La Brede Rugby",
           "position": 1,
           "stats": {
-            "id": 105221833,
+            "id": 107939774,
             "regulationPointsTerrain": null,
-            "pointTerrain": 20,
-            "joues": 5,
-            "gagnes": 4,
+            "pointTerrain": 25,
+            "joues": 6,
+            "gagnes": 5,
+            "nuls": 0,
+            "perdus": 1,
+            "pointsDeMarqueAcquis": 299,
+            "pointsDeMarqueConcedes": 74,
+            "goalAverage": 225,
+            "essaiMarques": null,
+            "essaiConcedes": null,
+            "bonusOffensif": 4,
+            "bonusDefensif": 1,
+            "createdAt": "2026-11-08T19:02:51.256Z",
+            "updatedAt": "2026-11-08T19:02:51.237Z"
+          }
+        },
+        {
+          "club": "AS Penne St Sylvestre",
+          "position": 2,
+          "stats": {
+            "id": 107939777,
+            "regulationPointsTerrain": null,
+            "pointTerrain": 24,
+            "joues": 6,
+            "gagnes": 5,
             "nuls": 1,
             "perdus": 0,
-            "pointsDeMarqueAcquis": 148,
-            "pointsDeMarqueConcedes": 57,
-            "goalAverage": 91,
+            "pointsDeMarqueAcquis": 174,
+            "pointsDeMarqueConcedes": 76,
+            "goalAverage": 98,
             "essaiMarques": null,
             "essaiConcedes": null,
             "bonusOffensif": 2,
             "bonusDefensif": 0,
-            "createdAt": "2026-11-01T23:51:00.802Z",
-            "updatedAt": "2026-11-01T23:51:00.778Z"
-          }
-        },
-        {
-          "club": "La Brede Rugby",
-          "position": 1,
-          "stats": {
-            "id": 105221835,
-            "regulationPointsTerrain": null,
-            "pointTerrain": 20,
-            "joues": 5,
-            "gagnes": 4,
-            "nuls": 0,
-            "perdus": 1,
-            "pointsDeMarqueAcquis": 210,
-            "pointsDeMarqueConcedes": 74,
-            "goalAverage": 136,
-            "essaiMarques": null,
-            "essaiConcedes": null,
-            "bonusOffensif": 3,
-            "bonusDefensif": 1,
-            "createdAt": "2026-11-01T23:51:00.809Z",
-            "updatedAt": "2026-11-01T23:51:00.793Z"
+            "createdAt": "2026-11-08T19:02:51.260Z",
+            "updatedAt": "2026-11-08T19:02:51.243Z"
           }
         }
       ],
@@ -59,7 +59,7 @@
     "Fédérale 1 Féminine": {
       "journees": 14,
       "rencontres": 56,
-      "joues": 20,
+      "joues": 23,
       "scoresIgnores": [
         "J1 Ras Stado Tpr-ibos : publié 0-0 par la FFR, non recopié"
       ],
@@ -70,44 +70,44 @@
           "club": "Entente Sp Bruges Blanquefort",
           "position": 1,
           "stats": {
-            "id": 105337144,
+            "id": 108114504,
             "regulationPointsTerrain": null,
-            "pointTerrain": 18,
-            "joues": 4,
+            "pointTerrain": 20,
+            "joues": 5,
             "gagnes": 4,
-            "nuls": 0,
+            "nuls": 1,
             "perdus": 0,
-            "pointsDeMarqueAcquis": 106,
-            "pointsDeMarqueConcedes": 35,
+            "pointsDeMarqueAcquis": 121,
+            "pointsDeMarqueConcedes": 50,
             "goalAverage": 71,
             "essaiMarques": null,
             "essaiConcedes": null,
             "bonusOffensif": 2,
             "bonusDefensif": 0,
-            "createdAt": "2026-11-02T13:50:43.738Z",
-            "updatedAt": "2026-11-02T13:50:43.712Z"
+            "createdAt": "2026-11-09T02:07:07.630Z",
+            "updatedAt": "2026-11-09T02:07:07.614Z"
           }
         },
         {
-          "club": "Ras Stado Tpr-ibos",
-          "position": 2,
+          "club": "Lons Section Paloise Rugby Feminin",
+          "position": 1,
           "stats": {
-            "id": 105337154,
+            "id": 108114522,
             "regulationPointsTerrain": null,
-            "pointTerrain": 16,
+            "pointTerrain": 20,
             "joues": 4,
-            "gagnes": 3,
+            "gagnes": 4,
             "nuls": 0,
-            "perdus": 1,
-            "pointsDeMarqueAcquis": 139,
-            "pointsDeMarqueConcedes": 31,
-            "goalAverage": 108,
+            "perdus": 0,
+            "pointsDeMarqueAcquis": 151,
+            "pointsDeMarqueConcedes": 20,
+            "goalAverage": 131,
             "essaiMarques": null,
             "essaiConcedes": null,
-            "bonusOffensif": 3,
-            "bonusDefensif": 1,
-            "createdAt": "2026-11-02T13:50:43.749Z",
-            "updatedAt": "2026-11-02T13:50:43.727Z"
+            "bonusOffensif": 4,
+            "bonusDefensif": 0,
+            "createdAt": "2026-11-09T02:07:07.641Z",
+            "updatedAt": "2026-11-09T02:07:07.625Z"
           }
         }
       ],
@@ -116,7 +116,7 @@
     "Fédérale 2 Féminine": {
       "journees": 14,
       "rencontres": 42,
-      "joues": 6,
+      "joues": 9,
       "scoresIgnores": [],
       "sansCorrespondance": [],
       "classement": 7,
@@ -125,44 +125,44 @@
           "club": "Ras Brejac Rugby La Brede Fed2 Feminines A XV",
           "position": 1,
           "stats": {
-            "id": 105233663,
+            "id": 108118854,
             "regulationPointsTerrain": null,
-            "pointTerrain": 10,
-            "joues": 2,
-            "gagnes": 2,
+            "pointTerrain": 15,
+            "joues": 3,
+            "gagnes": 3,
             "nuls": 0,
             "perdus": 0,
-            "pointsDeMarqueAcquis": 158,
-            "pointsDeMarqueConcedes": 24,
-            "goalAverage": 134,
+            "pointsDeMarqueAcquis": 198,
+            "pointsDeMarqueConcedes": 38,
+            "goalAverage": 160,
             "essaiMarques": null,
             "essaiConcedes": null,
-            "bonusOffensif": 2,
+            "bonusOffensif": 3,
             "bonusDefensif": 0,
-            "createdAt": "2026-11-02T02:11:18.423Z",
-            "updatedAt": "2026-11-02T02:11:18.412Z"
+            "createdAt": "2026-11-09T02:07:46.633Z",
+            "updatedAt": "2026-11-09T02:07:46.623Z"
           }
         },
         {
-          "club": "Union Du Bassin Marmandais",
+          "club": "Aytre Rugby",
           "position": 2,
           "stats": {
-            "id": 105233673,
+            "id": 108118864,
             "regulationPointsTerrain": null,
             "pointTerrain": 9,
-            "joues": 2,
+            "joues": 3,
             "gagnes": 2,
             "nuls": 0,
-            "perdus": 0,
-            "pointsDeMarqueAcquis": 51,
-            "pointsDeMarqueConcedes": 17,
-            "goalAverage": 34,
+            "perdus": 1,
+            "pointsDeMarqueAcquis": 56,
+            "pointsDeMarqueConcedes": 56,
+            "goalAverage": 0,
             "essaiMarques": null,
             "essaiConcedes": null,
             "bonusOffensif": 1,
             "bonusDefensif": 0,
-            "createdAt": "2026-11-02T02:11:18.435Z",
-            "updatedAt": "2026-11-02T02:11:18.419Z"
+            "createdAt": "2026-11-09T02:07:46.642Z",
+            "updatedAt": "2026-11-09T02:07:46.629Z"
           }
         }
       ],
